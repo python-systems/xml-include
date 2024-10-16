@@ -1,0 +1,21 @@
+<types>
+    <composite name="varAsciiEncoding">
+        <type name="length" primitiveType="uint8" semanticType="Length"/>
+        <type name="varData" primitiveType="uint8" length="0" characterEncoding="ASCII"/>
+    </composite>
+
+    <composite name="varDataEncoding" description="Variable length binary blob.">
+        <type name="length" primitiveType="uint32" maxValue="1073741824"/>
+        <type name="varData" primitiveType="uint8" length="0"/>
+    </composite>
+
+    <composite name="decimalFloat">
+        <type name="value" primitiveType="int64"/>
+        <type name="scale" primitiveType="int16"/>
+    </composite>
+
+    <composite name="groupSizeEncoding">
+        <type name="blockLength" primitiveType="uint16"/>
+        <type name="numInGroup" primitiveType="uint16" semanticType="NumInGroup"/>
+    </composite>
+</types>

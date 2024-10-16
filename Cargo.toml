@@ -1,0 +1,16 @@
+[package]
+name = "xml-include"
+version = "0.1.0"
+license = "MIT"
+description = "Small utility library for resolving XML includes"
+authors = ["Python Systems <python-systems@proton.me>"]
+readme = "README.md"
+homepage = "https://github.com/python-systems/xml-include"
+repository = "https://github.com/python-systems/xml-include"
+keywords = ["xml", "include", "preprocessor"]
+categories = ["parsing", "encoding"]
+edition = "2021"
+
+[dependencies]
+xml = "^0.8.10"
+thiserror = "^1.0.0"
